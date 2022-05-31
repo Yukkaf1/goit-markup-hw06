@@ -66,9 +66,11 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal-btn" data-modal-close>
-      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="black"/>
+      <span class="modal-icon">
+      <svg width="18px" height="18px" class="btn-icon">
+        <use href="./images/sprite.svg#icon-vector"></use>
         </svg>
+      </span>
       </button>
   
 
@@ -76,27 +78,33 @@
   <form class="call-form" name="call-form" autocomplete="on" >
     <div role="group" class="">
       <b class="call-title">Оставьте свои данные, мы вам перезвоним</b>
-    <label class="form-group">
+    
+      <label class="form-group">
+        <div class="imput-group">
       <span class="form-label">Имя</span>
       <input class="form-input" type="text" name="user-name" id="">
       <span class="form-icon">
-        <svg class="name-icon" width="18px" height="18px">
+        <svg class="name-icon" width="11px" height="11px">
           <use href="./images/sprite.svg#icon-name"></use>
         </svg>
       </span>
+      </div>
     </label>
 
     <label class="form-group">
+      <div class="imput-group">
       <span class="form-label">Телефон</span>
       <input class="form-input" type="tel" name="user-phone" id="" autocomplete="of">
       <span class="form-icon">
         <svg class="tel-icon" width="18px" height="18px">
-          <use href="./images/sprite.svg#icon-tel"></use>
+          <use href="./images/sprite.svg#icon-phone"></use>
         </svg>
       </span>
+      </div>
     </label>
 
     <label class="form-group">
+      <div class="imput-group">
       <span class="form-label">Почта</span>
       <input class="form-input" type="email" 
       name="user-mail" id="">
@@ -104,6 +112,7 @@
         <svg class="mail-icon" width="18px" height="18px">
           <use href="./images/sprite.svg#icon-meil"></use>
         </svg>
+        </div>
       </span>
     </label>
 
@@ -580,7 +589,7 @@
 
 <!--Форма Подпишитесь на рассылку-->
 
-<div class="form container">
+<div class="form footer">
 
 <p class="form-title">Подпишитесь на рассылку</p> 
 
@@ -611,7 +620,7 @@
 
 </form>
 </div>
-
+</div>
 </footer>
 
 <button class="scroll-to-top" type="button">
